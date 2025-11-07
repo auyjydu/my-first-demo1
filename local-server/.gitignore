@@ -1,0 +1,8 @@
+node_modules/
+_managed_files/
+*.pem
+*.key
+*.crt
+.env
+.DS_Store
+
