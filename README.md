@@ -4,12 +4,7 @@
 
 ## 🌐 公网部署链接
 
-**部署地址**: [请在部署后更新此链接]
-
-- Vercel: `https://your-app-name.vercel.app`
-- Netlify: `https://your-app-name.netlify.app`
-
-> ⚠️ **重要**: 部署后，请将实际部署地址更新到 `local-server/server.js` 中的 `allowedOrigins` 数组中。
+**部署地址**: https://my-first-demo-sand.vercel.app/
 
 ## 📋 项目结构
 
@@ -122,18 +117,7 @@ npm install
 > - 每个开发者都需要在自己的机器上运行 `mkcert -install` 和 `mkcert localhost`
 > - 如果不信任根证书，浏览器会显示 "NET::ERR_CERT_AUTHORITY_INVALID" 错误
 
-#### 1.3 配置 CORS（重要）
-
-在 `local-server/server.js` 中，更新 `allowedOrigins` 数组，添加你的实际部署域名：
-
-```javascript
-const allowedOrigins = [
-  'https://your-app-name.vercel.app',  // 替换为你的实际域名
-  'https://your-app-name.netlify.app', // 如果有多个部署
-]
-```
-
-#### 1.4 启动服务器
+#### 1.3 启动服务器
 
 ```bash
 npm run start:server
@@ -150,36 +134,6 @@ npm run dev
 ```
 
 前端将在 `http://localhost:3000` 启动（开发环境）。
-
-### 3. 部署到公网
-
-#### 使用 Vercel：
-
-1. 安装 Vercel CLI:
-   ```bash
-   npm i -g vercel
-   ```
-
-2. 在 `web-app` 目录下部署:
-   ```bash
-   cd web-app
-   vercel
-   ```
-
-3. 按照提示完成部署。
-
-#### 使用 Netlify：
-
-1. 安装 Netlify CLI:
-   ```bash
-   npm i -g netlify-cli
-   ```
-
-2. 在 `web-app` 目录下部署:
-   ```bash
-   cd web-app
-   netlify deploy --prod
-   ```
 
 ## 🔧 技术方案说明
 

@@ -20,12 +20,8 @@ if (!fs.existsSync(MANAGED_FILES_DIR)) {
 }
 
 // CORS configuration
-// In production, replace with your actual deployed domain
 const allowedOrigins = [
-  'https://your-app-name.vercel.app',
-  'https://your-app-name.netlify.app',
-  // Add your actual deployment URL here
-  // For development:
+  'https://my-first-demo-sand.vercel.app',
   'http://localhost:3000',
   'http://localhost:5173', // Vite default port
 ]
